@@ -1,0 +1,59 @@
+{
+  "name": "feb15",
+  "version": "0.0.1",
+  "description": "Feb 15, 2020",
+  "main": "src/index.js",
+  "scripts": {
+    "dev": "node --max-old-space-size=4096 ./node_modules/.bin/webpack-dev-server --config config/webpack.config.dev.js",
+    "build": "webpack --config config/webpack.config.prod.js",
+    "lint": "eslint --ext .js src",
+    "prettier": "prettier --write '**/*.js'"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/norux/feb15.git"
+  },
+  "author": "Heebum Kwak <heebum.kwak@linecorp.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/norux/feb15/issues"
+  },
+  "homepage": "https://github.com/norux/feb15#readme",
+  "dependencies": {
+    "@material-ui/core": "^4.4.0",
+    "install": "^0.13.0",
+    "npm": "^6.11.2",
+    "react": "^16.9.0",
+    "react-dom": "^16.9.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.5.5",
+    "@babel/plugin-proposal-object-rest-spread": "^7.5.5",
+    "@babel/preset-env": "^7.5.5",
+    "@babel/preset-react": "^7.0.0",
+    "@hot-loader/react-dom": "^16.9.0",
+    "autoprefixer": "^9.6.1",
+    "babel-loader": "^8.0.6",
+    "css-loader": "^3.2.0",
+    "eslint": "^6.3.0",
+    "eslint-config-prettier": "^6.1.0",
+    "eslint-config-standard": "^14.1.0",
+    "eslint-plugin-babel": "^5.3.0",
+    "eslint-plugin-import": "^2.18.2",
+    "eslint-plugin-node": "^9.2.0",
+    "eslint-plugin-promise": "^4.2.1",
+    "eslint-plugin-standard": "^4.0.1",
+    "html-loader": "^0.5.5",
+    "html-webpack-plugin": "^3.2.0",
+    "lint-staged": "^9.2.5",
+    "postcss-loader": "^3.0.0",
+    "precss": "^4.0.0",
+    "prettier": "^1.18.2",
+    "react-hot-loader": "^4.12.12",
+    "style-loader": "^1.0.0",
+    "webpack": "^4.39.3",
+    "webpack-cli": "^3.3.7",
+    "webpack-dev-server": "^3.8.0",
+    "webpack-merge": "^4.2.2"
+  }
+}
