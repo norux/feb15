@@ -1,0 +1,10 @@
+$color_main_bg: #919191;
+
+html, body {
+  background-color: $color_main_bg;
+}
+
+.wrap {
+  background-color: #fff;
+  height: 100vh;
+}
