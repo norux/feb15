@@ -1,10 +1,14 @@
-$color_main_bg: #919191;
+$color_main_bg: #F0EBE7;
 
 html, body {
   background-color: $color_main_bg;
 }
 
-.wrap {
+.top {
   background-color: #fff;
+
+}
+
+.wrap {
   height: 100vh;
 }
