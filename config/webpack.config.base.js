@@ -10,6 +10,7 @@ module.exports = {
   },
   output: {
     path: dist,
+    publicPath: '/',
   },
   resolve: {
     alias: {
@@ -31,6 +32,10 @@ module.exports = {
       {
         test: /\.html$/,
         loader: 'html-loader',
+      },
+      {
+        test: /\.(png|jpe?g|gif|svg)(\?.*)?$/,
+        loader: 'file-loader',
       },
     ],
   },

@@ -6,18 +6,28 @@ module.exports = {
   parserOptions: {
     sourceType: 'module',
     ecmaVersion: 6,
+    ecmaFeatures: {
+      jsx: true,
+    },
   },
   env: {
     browser: true,
     node: true,
     es6: true,
   },
+  settings: {
+    react: {
+      version: 'detect',
+    },
+  },
   extends: [
     // https://github.com/standard/standard/blob/master/docs/RULES-en.md
     'standard',
     'plugin:prettier/recommended',
+    'plugin:react/recommended',
+    'prettier/react',
   ],
-  plugins: ['prettier'],
+  plugins: ['prettier', 'react'],
   // add your custom rules here
   rules: {
     // allow async-await
