@@ -14,8 +14,7 @@ const useStyles = makeStyles(() => ({
 }))
 
 export const Poet = () => {
-  const classes = useStyles()
-  const { poet, typography } = classes
+  const { poet, typography } = useStyles()
 
   return (
     <Section>

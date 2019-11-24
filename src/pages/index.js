@@ -7,6 +7,10 @@ export const Index = () => {
     <Fragment>
       <Introduction />
       <Poet />
+      <Poet />
+      <Poet />
+      <Poet />
+      <Poet />
     </Fragment>
   )
 }
