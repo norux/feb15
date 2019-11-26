@@ -3,7 +3,6 @@ import Box from '@material-ui/core/Box'
 import makeStyles from '@material-ui/core/styles/makeStyles'
 import { Section } from '~/components/common/Section'
 import { Title } from '~/components/Gallery/Title'
-import { ExpandSwitch } from '~/components/Gallery/ExpandSwitch'
 import { Slide } from '~/components/Gallery/Slide'
 import { Grid } from '~/components/Gallery/Gird'
 import { photos } from '~/components/Gallery/utils'
@@ -31,8 +30,7 @@ export const Gallery = () => {
   return (
     <Section className={root}>
       <Fragment>
-        <Title />
-        <ExpandSwitch onClick={toggleSwitch} />
+        <Title expanded={expanded} onClick={toggleSwitch} />
         <Box className={photoArea}>
           {expanded ? <Grid activated={expanded} photos={photos} /> : <Slide activated={!expanded} photos={photos} />}
         </Box>
