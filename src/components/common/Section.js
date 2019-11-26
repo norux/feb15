@@ -1,9 +1,9 @@
 import React from 'react'
 import PropTypes from 'prop-types'
+import classNames from 'classnames'
 import makeStyles from '@material-ui/core/styles/makeStyles'
 import Box from '@material-ui/core/Box'
 import { DisplayAnimation } from '~/components/common/DisplayAnimation'
-import classNames from 'classnames'
 
 const useStyles = makeStyles(() => ({
   root: {
@@ -13,17 +13,18 @@ const useStyles = makeStyles(() => ({
   },
 }))
 
-export const Section = props => {
+export const Section = ({ children, className }) => {
   const { root } = useStyles()
-  const { children, className = '' } = props
-  const classes = [
-    root,
-    className,
-  ]
+  const classes = [root, className]
 
   return (
     <DisplayAnimation>
-      <Box display="flex" flexDirection="column" justifyContent="flex-start" alignItems="center" className={classNames(classes)}>
+      <Box
+        display="flex"
+        flexDirection="column"
+        justifyContent="flex-start"
+        alignItems="center"
+        className={classNames(classes)}>
         {children}
       </Box>
     </DisplayAnimation>
@@ -32,4 +33,5 @@ export const Section = props => {
 
 Section.propTypes = {
   children: PropTypes.element.isRequired,
+  className: PropTypes.string,
 }

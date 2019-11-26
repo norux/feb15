@@ -51,11 +51,11 @@ module.exports = {
         vendor: {
           test: /[\\/]node_modules[\\/]/,
           name(module) {
-            const packageName = module.context.match(/[\\/]node_modules[\\/](.*?)([\\/]|$)/)[1];
-            return `packages.${packageName.replace('@', '')}`;
-          }
-        }
-      }
+            const packageName = module.context.match(/[\\/]node_modules[\\/](.*?)([\\/]|$)/)[1]
+            return `packages.${packageName.replace('@', '')}`
+          },
+        },
+      },
     },
   },
 }

@@ -13,7 +13,7 @@ const useStyles = makeStyles(() => ({
     fontWeight: 500,
     '& span': {
       fontSize: '1.3rem',
-    }
+    },
   },
 }))
 

@@ -10,7 +10,7 @@ const useStyles = makeStyles(() => ({
   },
   img: {
     minHeight: '200px',
-  }
+  },
 }))
 
 export const Photo = () => {

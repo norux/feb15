@@ -1,7 +1,4 @@
-import React, {
-  Fragment,
-  useState,
-} from 'react'
+import React, { Fragment, useState } from 'react'
 import Box from '@material-ui/core/Box'
 import makeStyles from '@material-ui/core/styles/makeStyles'
 import { Section } from '~/components/common/Section'
@@ -21,7 +18,7 @@ const useStyles = makeStyles(() => ({
   photoArea: {
     width: '100%',
     marginTop: '20px',
-  }
+  },
 }))
 
 export const Gallery = () => {
@@ -37,7 +34,7 @@ export const Gallery = () => {
         <Title />
         <ExpandSwitch onClick={toggleSwitch} />
         <Box className={photoArea}>
-          {expanded ? <Grid photos={photos} /> : <Slide photos={photos} />}
+          {expanded ? <Grid activated={expanded} photos={photos} /> : <Slide activated={!expanded} photos={photos} />}
         </Box>
       </Fragment>
     </Section>

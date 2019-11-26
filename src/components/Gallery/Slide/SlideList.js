@@ -1,4 +1,5 @@
 import React from 'react'
+import PropTypes from 'prop-types'
 import makeStyles from '@material-ui/core/styles/makeStyles'
 import { SlideItem } from '~/components/Gallery/Slide/SlideItem'
 
@@ -20,4 +21,8 @@ export const SlideList = ({ photos }) => {
       ))}
     </ul>
   )
+}
+
+SlideList.propTypes = {
+  photos: PropTypes.array,
 }

@@ -1,8 +1,4 @@
-import React, {
-  useEffect,
-  useRef,
-  useState,
-} from 'react'
+import React, { useEffect, useRef, useState } from 'react'
 import PropTypes from 'prop-types'
 import makeStyles from '@material-ui/core/styles/makeStyles'
 import useVisibilitySensor from '@rooks/use-visibility-sensor'
@@ -27,7 +23,7 @@ export const DisplayAnimation = props => {
     scrollCheck: true,
     partialVisibility: true,
     scrollDebounce: 0,
-  });
+  })
 
   useEffect(() => {
     if (isVisible) {
@@ -36,7 +32,7 @@ export const DisplayAnimation = props => {
         transform: 'translate3d(0, 0, 0)',
       })
     }
-  },  [ isVisible ])
+  }, [isVisible])
 
   return (
     <div className={animation} style={style} ref={node}>

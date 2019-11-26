@@ -17,8 +17,8 @@ const useStyles = makeStyles(() => ({
     fontWeight: '600',
     textAlign: 'center',
     '& span': {
-      color: '#2DB400'
-    }
+      color: '#2DB400',
+    },
   },
 }))
 
@@ -28,7 +28,9 @@ export const Date = () => {
   return (
     <Box className={root}>
       <Typography className={date}>2020년 2월 15일 토요일 오후 1시</Typography>
-      <Typography className={location}><span>네이버</span> 그린팩토리</Typography>
+      <Typography className={location}>
+        <span>네이버</span> 그린팩토리
+      </Typography>
     </Box>
   )
 }

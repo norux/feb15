@@ -17,7 +17,7 @@ const useStyles = makeStyles(() => ({
     fontSize: '4rem',
     '& span': {
       fontSize: '1.3rem',
-    }
+    },
   },
 }))
 
