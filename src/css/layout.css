@@ -9,6 +9,7 @@ html, body {
 
 }
 
-.wrap {
+#app {
   height: 100vh;
+  color: #616161;
 }

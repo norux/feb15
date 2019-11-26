@@ -3,23 +3,27 @@ import PropTypes from 'prop-types'
 import makeStyles from '@material-ui/core/styles/makeStyles'
 import Box from '@material-ui/core/Box'
 import { DisplayAnimation } from '~/components/common/DisplayAnimation'
+import classNames from 'classnames'
 
 const useStyles = makeStyles(() => ({
-  section: {
-    margin: '10px 0',
+  root: {
+    margin: '15px 0',
     backgroundColor: '#fff',
     borderRadius: '5px',
   },
 }))
 
 export const Section = props => {
-  const classes = useStyles()
-  const { section } = classes
-  const { children } = props
+  const { root } = useStyles()
+  const { children, className = '' } = props
+  const classes = [
+    root,
+    className,
+  ]
 
   return (
     <DisplayAnimation>
-      <Box display="flex" flexDirection="column" justifyContent="flex-start" alignItems="center" className={section}>
+      <Box display="flex" flexDirection="column" justifyContent="flex-start" alignItems="center" className={classNames(classes)}>
         {children}
       </Box>
     </DisplayAnimation>
