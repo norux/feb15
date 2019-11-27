@@ -1,12 +1,12 @@
 import React, { useEffect, useState } from 'react'
-import PropTypes from 'prop-types'
 import GridList from '@material-ui/core/GridList'
-import GridListTile from '@material-ui/core/GridListTile'
 import makeStyles from '@material-ui/core/styles/makeStyles'
 import { Box } from '@material-ui/core'
 import { isWideScreen } from '~/utils'
 import { orderingPhoto } from '~/components/Gallery/Gird/utils'
 import Fade from '@material-ui/core/Fade'
+import { GridGalleryItem } from '~/components/Gallery/Gird/GridGalleryItem'
+import GridListTile from '@material-ui/core/GridListTile'
 
 const useStyles = makeStyles(() => ({
   root: {
@@ -16,14 +16,13 @@ const useStyles = makeStyles(() => ({
   box: {
     padding: '0 15px 15px',
   },
-  tile: {},
 }))
 
 const GRID_LIST_MAX_COLUMN_LENGTH = 3
 const WIDE_GRID_LIST_MAX_COLUMN_LENGTH = 4
 
-export const Grid = ({ photos, activated }) => {
-  const { root, box, tile } = useStyles()
+export const Grid = ({ photos, activated, setModalOpen, setModalImage }) => {
+  const { root, box } = useStyles()
   const [orderedPhotos, setOrderedPhotos] = useState(photos)
   const [cols, setCols] = useState(null)
   const handleResize = () => {
@@ -51,17 +50,12 @@ export const Grid = ({ photos, activated }) => {
       <Box className={box}>
         <GridList cellHeight={160} cols={cols} className={root}>
           {orderedPhotos.map((photo, index) => (
-            <GridListTile key={index} cols={photo.cols} className={tile}>
-              <img src={photo.src} alt={photo.alt} />
+            <GridListTile key={index} cols={photo.cols}>
+              <GridGalleryItem photo={photo} setModalOpen={setModalOpen} setModalImage={setModalImage} />
             </GridListTile>
           ))}
         </GridList>
       </Box>
     </Fade>
   )
-}
-
-Grid.propTypes = {
-  photos: PropTypes.array,
-  activated: PropTypes.bool,
 }

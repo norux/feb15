@@ -1,5 +1,4 @@
 import React, { useEffect, useRef, useState } from 'react'
-import PropTypes from 'prop-types'
 import makeStyles from '@material-ui/core/styles/makeStyles'
 import useVisibilitySensor from '@rooks/use-visibility-sensor'
 
@@ -39,8 +38,4 @@ export const DisplayAnimation = props => {
       {children}
     </div>
   )
-}
-
-DisplayAnimation.propTypes = {
-  children: PropTypes.element.isRequired,
 }

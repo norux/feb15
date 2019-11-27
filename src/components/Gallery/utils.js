@@ -30,79 +30,79 @@ export const photos = [
     alt: '',
     cols: 1,
   },
-  {
-    src: photo03,
-    alt: '',
-    cols: 1,
-  },
-  {
-    src: photo04,
-    alt: '',
-    cols: 2,
-  },
-  {
-    src: photo05,
-    alt: '',
-    cols: 1,
-  },
-  {
-    src: photo03,
-    alt: '',
-    cols: 1,
-  },
-  {
-    src: photo04,
-    alt: '',
-    cols: 2,
-  },
-  {
-    src: photo05,
-    alt: '',
-    cols: 1,
-  },
-  {
-    src: photo05,
-    alt: '',
-    cols: 2,
-  },
-  {
-    src: photo03,
-    alt: '',
-    cols: 2,
-  },
-  {
-    src: photo04,
-    alt: '',
-    cols: 2,
-  },
-  {
-    src: photo05,
-    alt: '',
-    cols: 1,
-  },
-  {
-    src: photo04,
-    alt: '',
-    cols: 2,
-  },
-  {
-    src: photo05,
-    alt: '',
-    cols: 1,
-  },
-  {
-    src: photo05,
-    alt: '',
-    cols: 1,
-  },
-  {
-    src: photo01,
-    alt: '',
-    cols: 1,
-  },
-  {
-    src: photo02,
-    alt: '',
-    cols: 2,
-  },
+  // {
+  //   src: photo03,
+  //   alt: '',
+  //   cols: 1,
+  // },
+  // {
+  //   src: photo04,
+  //   alt: '',
+  //   cols: 2,
+  // },
+  // {
+  //   src: photo05,
+  //   alt: '',
+  //   cols: 1,
+  // },
+  // {
+  //   src: photo03,
+  //   alt: '',
+  //   cols: 1,
+  // },
+  // {
+  //   src: photo04,
+  //   alt: '',
+  //   cols: 2,
+  // },
+  // {
+  //   src: photo05,
+  //   alt: '',
+  //   cols: 1,
+  // },
+  // {
+  //   src: photo05,
+  //   alt: '',
+  //   cols: 1,
+  // },
+  // {
+  //   src: photo03,
+  //   alt: '',
+  //   cols: 2,
+  // },
+  // {
+  //   src: photo04,
+  //   alt: '',
+  //   cols: 1,
+  // },
+  // {
+  //   src: photo05,
+  //   alt: '',
+  //   cols: 1,
+  // },
+  // {
+  //   src: photo04,
+  //   alt: '',
+  //   cols: 2,
+  // },
+  // {
+  //   src: photo05,
+  //   alt: '',
+  //   cols: 1,
+  // },
+  // {
+  //   src: photo05,
+  //   alt: '',
+  //   cols: 1,
+  // },
+  // {
+  //   src: photo01,
+  //   alt: '',
+  //   cols: 1,
+  // },
+  // {
+  //   src: photo02,
+  //   alt: '',
+  //   cols: 2,
+  // },
 ]

@@ -1,5 +1,4 @@
 import React, { Fragment } from 'react'
-import PropTypes from 'prop-types'
 import ExpandMoreIcon from '@material-ui/icons/ExpandMore'
 import ExpandLessIcon from '@material-ui/icons/ExpandLess'
 import makeStyles from '@material-ui/core/styles/makeStyles'
@@ -34,10 +33,4 @@ export const ExpandSwitch = ({ expanded, className, onClick }) => {
       </Button>
     </Box>
   )
-}
-
-ExpandSwitch.propTypes = {
-  expanded: PropTypes.bool,
-  onClick: PropTypes.func,
-  className: PropTypes.string,
 }

@@ -1,5 +1,4 @@
 import React from 'react'
-import PropTypes from 'prop-types'
 import classNames from 'classnames'
 import makeStyles from '@material-ui/core/styles/makeStyles'
 import Box from '@material-ui/core/Box'
@@ -29,9 +28,4 @@ export const Section = ({ children, className }) => {
       </Box>
     </DisplayAnimation>
   )
-}
-
-Section.propTypes = {
-  children: PropTypes.element.isRequired,
-  className: PropTypes.string,
 }
