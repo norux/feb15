@@ -1,7 +1,7 @@
 import React, { Fragment } from 'react'
-import { Introduction } from '~/components/Introduction'
+import { Introduction } from '~/components/Introduction/Introduction'
 import { Poet } from '~/components/Poet'
-import { Gallery } from '~/components/Gallery'
+import { Gallery } from '~/components/Gallery/Gallery'
 
 export const Index = () => {
   return (

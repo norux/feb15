@@ -14,10 +14,10 @@ const useStyles = makeStyles(() => ({
   },
 }))
 
-export const SlideGalleryItem = ({ photo, setModalImage, setModalOpen }) => {
+export const GallerySlideItem = ({ photo, currentIndex, setModalImageIndex, setModalOpen }) => {
   const { root, item } = useStyles()
   const onClick = () => {
-    setModalImage(photo)
+    setModalImageIndex(currentIndex)
     setModalOpen(true)
   }
 

@@ -30,7 +30,8 @@ module.exports = {
   plugins: ['prettier', 'react'],
   // add your custom rules here
   rules: {
-    'react/prop-types': [0],
+    'react/prop-types': 'off',
+    'no-new': 'off',
 
     // allow async-await
     'generator-star-spacing': 'off',

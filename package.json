@@ -5,7 +5,7 @@
   "main": "src/index.js",
   "scripts": {
     "dev": "node --max-old-space-size=4096 ./node_modules/.bin/webpack-dev-server --config config/webpack.config.dev.js",
-    "build": "webpack --config config/webpack.config.prod.js",
+    "build": "NODE_ENV=production webpack --config config/webpack.config.prod.js",
     "lint": "eslint --ext .js src",
     "prettier": "prettier --write '**/*.js'"
   },
@@ -20,7 +20,6 @@
   },
   "homepage": "https://github.com/norux/feb15#readme",
   "dependencies": {
-    "@egjs/react-flicking": "^3.1.2",
     "@material-ui/core": "^4.4.0",
     "@material-ui/icons": "^4.2.1",
     "@rooks/use-visibility-sensor": "^3.4.0",
@@ -29,13 +28,16 @@
     "npm": "^6.13.1",
     "prop-types": "^15.7.2",
     "react": "^16.9.0",
-    "react-dom": "^16.9.0"
+    "react-dom": "^16.9.0",
+    "swiper": "^5.2.1"
   },
   "devDependencies": {
     "@babel/core": "^7.5.5",
     "@babel/plugin-proposal-object-rest-spread": "^7.5.5",
+    "@babel/plugin-transform-runtime": "^7.7.4",
     "@babel/preset-env": "^7.5.5",
     "@babel/preset-react": "^7.0.0",
+    "@babel/runtime": "^7.7.4",
     "@hot-loader/react-dom": "^16.9.0",
     "autoprefixer": "^9.6.1",
     "babel-eslint": "^10.0.3",

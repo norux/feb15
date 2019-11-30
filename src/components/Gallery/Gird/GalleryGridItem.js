@@ -1,8 +1,8 @@
 import React from 'react'
 
-export const GridGalleryItem = ({ photo, setModalImage, setModalOpen }) => {
+export const GalleryGridItem = ({ photo, currentIndex, setModalImageIndex, setModalOpen }) => {
   const onClick = () => {
-    setModalImage(photo)
+    setModalImageIndex(currentIndex)
     setModalOpen(true)
   }
 

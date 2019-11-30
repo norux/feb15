@@ -3,10 +3,9 @@ import Box from '@material-ui/core/Box'
 import makeStyles from '@material-ui/core/styles/makeStyles'
 import { Section } from '~/components/common/Section'
 import { Title } from '~/components/Gallery/Title'
-import { Slide } from '~/components/Gallery/Slide'
-import { Grid } from '~/components/Gallery/Gird'
+import { GallerySlide } from '~/components/Gallery/Slide/GallerySlide'
+import { GalleryGrid } from '~/components/Gallery/Gird/GalleryGrid'
 import { photos } from '~/components/Gallery/utils'
-import { ImageLayer } from '~/components/Gallery/ImageLayer'
 
 const useStyles = makeStyles(() => ({
   root: {
@@ -27,12 +26,6 @@ export const Gallery = () => {
   const toggleSwitch = () => {
     expanded ? setExpanded(false) : setExpanded(true)
   }
-  const [modalOpen, setModalOpen] = React.useState(false)
-  const [modalImage, setModalImage] = React.useState(null)
-
-  const handleClose = () => {
-    setModalOpen(false)
-  }
 
   return (
     <Section className={root}>
@@ -40,17 +33,10 @@ export const Gallery = () => {
         <Title expanded={expanded} onClick={toggleSwitch} />
         <Box className={photoArea}>
           {expanded ? (
-            <Grid activated={expanded} photos={photos} setModalOpen={setModalOpen} setModalImage={setModalImage} />
+            <GalleryGrid activated={expanded} photos={photos} />
           ) : (
-            <Slide activated={!expanded} photos={photos} setModalOpen={setModalOpen} setModalImage={setModalImage} />
+            <GallerySlide activated={!expanded} photos={photos} />
           )}
-          <ImageLayer
-            open={modalOpen}
-            photos={photos}
-            image={modalImage}
-            setImage={setModalImage}
-            handleClose={handleClose}
-          />
         </Box>
       </Fragment>
     </Section>

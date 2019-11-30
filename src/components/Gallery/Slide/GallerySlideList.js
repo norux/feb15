@@ -1,6 +1,6 @@
 import React, { Fragment } from 'react'
 import makeStyles from '@material-ui/core/styles/makeStyles'
-import { SlideGalleryItem } from '~/components/Gallery/Slide/SlideGalleryItem'
+import { GallerySlideItem } from '~/components/Gallery/Slide/GallerySlideItem'
 
 const useStyles = makeStyles(() => ({
   root: {
@@ -11,14 +11,20 @@ const useStyles = makeStyles(() => ({
   },
 }))
 
-export const SlideGalleryList = ({ photos, setModalOpen, setModalImage }) => {
+export const GallerySlideList = ({ photos, setModalOpen, setModalImageIndex }) => {
   const { root } = useStyles()
 
   return (
     <Fragment>
       <ul className={root}>
         {photos.map((photo, index) => (
-          <SlideGalleryItem photo={photo} key={index} setModalImage={setModalImage} setModalOpen={setModalOpen} />
+          <GallerySlideItem
+            photo={photo}
+            key={index}
+            currentIndex={index}
+            setModalImageIndex={setModalImageIndex}
+            setModalOpen={setModalOpen}
+          />
         ))}
       </ul>
     </Fragment>
