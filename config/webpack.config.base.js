@@ -2,14 +2,14 @@ const { resolve } = require('path')
 const HtmlWebpackPlugin = require('html-webpack-plugin')
 
 const src = resolve('src')
-const dist = resolve('dist')
+const docs = resolve('docs')
 
 module.exports = {
   entry: {
     feb15: resolve(src, 'index.js'),
   },
   output: {
-    path: dist,
+    path: docs,
     publicPath: '/',
   },
   resolve: {
@@ -23,7 +23,7 @@ module.exports = {
       {
         test: /\.jsx?$/,
         loader: 'babel-loader',
-        exclude: /(node_modules)/,
+        exclude: /node_modules\/(?!(dom7|swiper|@rooks\/use-visibility-sensor)\/).*/,
       },
       {
         test: /\.css$/,
@@ -42,20 +42,7 @@ module.exports = {
   plugins: [
     new HtmlWebpackPlugin({
       template: './src/index.html',
+      favicon: './favicon.ico',
     }),
   ],
-  optimization: {
-    splitChunks: {
-      chunks: 'all',
-      cacheGroups: {
-        vendors: {
-          test: /[\\/]node_modules[\\/]/,
-          name(module)  {
-            const packageName = module.context.match(/[\\/]node_modules[\\/](.*?)([\\/]|$)/)[1]
-            return `packages.${packageName.replace('@', '')}`
-          },
-        },
-      },
-    },
-  },
 }

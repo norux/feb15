@@ -1,4 +1,5 @@
 import React from 'react'
+import classNames from 'classnames'
 import Box from '@material-ui/core/Box'
 import Typography from '@material-ui/core/Typography'
 import makeStyles from '@material-ui/core/styles/makeStyles'
@@ -10,11 +11,6 @@ const useStyles = makeStyles(() => ({
     height: '100%',
   },
   title: {
-    fontFamily: 'Nunito, sans-serif',
-    fontWeight: 500,
-    '& span': {
-      fontSize: '1.3rem',
-    },
     marginLeft: '30px',
   },
   button: {
@@ -22,13 +18,13 @@ const useStyles = makeStyles(() => ({
   },
 }))
 
-export const Title = props => {
+export const Title = ({ className, ...props }) => {
   const { root, title, button } = useStyles()
   return (
-    <Box className={root} display="flex" flexDirection="row" justifyContent="space-between">
-      <Typography variant="h3" className={title}>
-        Gallery
-      </Typography>
+    <Box className={classNames(className, root)} display="flex" flexDirection="row" justifyContent="space-between">
+      <Box display="flex" className={title}>
+        <Typography variant="h3">Gallery</Typography>
+      </Box>
       <ExpandSwitch className={button} {...props} />
     </Box>
   )

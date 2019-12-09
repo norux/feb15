@@ -4,7 +4,7 @@ import Modal from '@material-ui/core/Modal'
 import Fade from '@material-ui/core/Fade'
 import Backdrop from '@material-ui/core/Backdrop'
 import makeStyles from '@material-ui/core/styles/makeStyles'
-import Swiper from 'swiper/js/swiper.esm.browser.bundle.min'
+import Swiper from 'swiper'
 import 'swiper/css/swiper.min.css'
 
 const useStyles = makeStyles(() => ({
@@ -12,18 +12,20 @@ const useStyles = makeStyles(() => ({
     display: 'flex',
     alignItems: 'center',
     justifyContent: 'center',
+    width: '100%',
   },
   paper: {
     width: '100%',
+    height: '100%',
+    display: 'flex',
+    alignItems: 'center',
     maxWidth: '700px',
-    position: 'relative',
     backgroundColor: 'transparent',
     outline: 'none',
     zIndex: '10000',
   },
   swiperContainer: {
     width: '100%',
-    height: '100%',
     backgroundColor: '#858585',
     '--swiper-theme-color': '#ecf2ff',
   },
@@ -39,9 +41,9 @@ const useStyles = makeStyles(() => ({
 export const ImageLayer = ({ open, photos, imageIndex, handleClose }) => {
   const { root, paper, swiperContainer, swiperWrapper, swiperPagination } = useStyles()
 
-  const onClose = () => {
+  const onClose = useCallback(() => {
     handleClose()
-  }
+  }, [])
 
   const swiperRef = useCallback(
     node => {

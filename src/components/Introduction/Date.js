@@ -8,14 +8,11 @@ const useStyles = makeStyles(() => ({
     padding: '15px 0 50px',
   },
   date: {
-    fontSize: '1.3rem',
+    fontSize: '1.7rem',
     fontWeight: '600',
-    textAlign: 'center',
   },
   location: {
-    fontSize: '1.2rem',
     fontWeight: '600',
-    textAlign: 'center',
     '& span': {
       color: '#2DB400',
     },
@@ -27,8 +24,10 @@ export const Date = () => {
 
   return (
     <Box className={root}>
-      <Typography className={date}>2020년 2월 15일 토요일 오후 1시</Typography>
-      <Typography className={location}>
+      <Typography variant="body1" className={date} align="center">
+        2020년 2월 15일 토요일 오후 1시
+      </Typography>
+      <Typography variant="body1" className={location} align="center">
         <span>네이버</span> 그린팩토리
       </Typography>
     </Box>

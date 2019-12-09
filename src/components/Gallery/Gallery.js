@@ -1,4 +1,4 @@
-import React, { Fragment, useState } from 'react'
+import React, { Fragment, useCallback, useState } from 'react'
 import Box from '@material-ui/core/Box'
 import makeStyles from '@material-ui/core/styles/makeStyles'
 import { Section } from '~/components/common/Section'
@@ -23,9 +23,9 @@ const useStyles = makeStyles(() => ({
 export const Gallery = () => {
   const { root, photoArea } = useStyles()
   const [expanded, setExpanded] = useState(false)
-  const toggleSwitch = () => {
+  const toggleSwitch = useCallback(() => {
     expanded ? setExpanded(false) : setExpanded(true)
-  }
+  }, [expanded])
 
   return (
     <Section className={root}>

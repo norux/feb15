@@ -1,9 +1,10 @@
 html, body {
   font-family: sans-serif;
+  font-size: 10px;
 }
 
 /**
   font-family: Sunflower, sans-serif;
   font-family: Nunito, sans-serif;
 */
-@import url('https://fonts.googleapis.com/css?family=Nunito|Pacifico&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Nunito|Pacifico|Noto+Serif+KR&display=swap');

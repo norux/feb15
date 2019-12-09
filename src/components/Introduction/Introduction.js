@@ -6,17 +6,18 @@ import { Date } from '~/components/Introduction/Date'
 import { Photo } from '~/components/Introduction/Photo'
 import { Title } from '~/components/Introduction/Title'
 import Divider from '@material-ui/core/Divider'
+import { Invitation } from '~/components/Introduction/Invitation'
 
 const useStyles = makeStyles(() => ({
   root: {
     backgroundColor: '#FFF',
-    paddingTop: '60px',
+    paddingTop: '50px',
   },
   divider: {
     marginTop: '20px',
     alignSelf: 'center',
     width: '1px',
-    height: '80px',
+    height: '70px',
   },
 }))
 
@@ -28,6 +29,7 @@ export const Introduction = () => {
       <Box display="flex" flexDirection="column" justifyContent="flex-start" className={root}>
         <Title />
         <Photo />
+        <Invitation />
         <Divider orientation="vertical" className={divider} />
         <Date />
       </Box>

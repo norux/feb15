@@ -12,7 +12,7 @@ const useStyles = makeStyles(() => ({
     height: '55px',
     backgroundColor: '#C6C6C6',
   },
-  title: {
+  date: {
     fontFamily: 'Pacifico, sans-serif',
     fontSize: '4rem',
     '& span': {
@@ -22,11 +22,11 @@ const useStyles = makeStyles(() => ({
 }))
 
 export const Title = () => {
-  const { root, title } = useStyles()
+  const { root, date } = useStyles()
 
   return (
     <Box alignItems="center" className={root}>
-      <p className={title}>
+      <p className={date}>
         02. 15 <span>❤️</span>
       </p>
     </Box>

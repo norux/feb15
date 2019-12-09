@@ -19,6 +19,7 @@ export const DisplayAnimation = props => {
   })
 
   const { isVisible } = useVisibilitySensor(node, {
+    resizeCheck: true,
     scrollCheck: true,
     partialVisibility: true,
     scrollDebounce: 0,

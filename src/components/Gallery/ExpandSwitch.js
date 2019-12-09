@@ -8,25 +8,28 @@ import classNames from 'classnames'
 
 const useStyles = makeStyles(() => ({
   root: {},
+  label: {
+    fontSize: '1.4rem',
+  },
   icon: {
-    fontSize: '1.8rem',
+    fontSize: '2rem',
   },
 }))
 
 export const ExpandSwitch = ({ expanded, className, onClick }) => {
-  const { root, icon } = useStyles()
+  const { root, label, icon } = useStyles()
 
   return (
     <Box display="flex" alignItems="center" className={classNames(root, className)}>
-      <Button variant="outlined" className={root} onClick={onClick}>
+      <Button variant="outlined" onClick={onClick}>
         {expanded ? (
           <Fragment>
-            <p>접기</p>
+            <p className={label}>접기</p>
             <ExpandLessIcon className={icon} />
           </Fragment>
         ) : (
           <Fragment>
-            <p>펼치기</p>
+            <p className={label}>펼치기</p>
             <ExpandMoreIcon className={icon} />
           </Fragment>
         )}
