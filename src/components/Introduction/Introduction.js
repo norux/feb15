@@ -7,6 +7,7 @@ import { Photo } from '~/components/Introduction/Photo'
 import { Title } from '~/components/Introduction/Title'
 import Divider from '@material-ui/core/Divider'
 import { Invitation } from '~/components/Introduction/Invitation'
+import { DDay } from '~/components/Introduction/DDay'
 
 const useStyles = makeStyles(() => ({
   root: {
@@ -31,6 +32,7 @@ export const Introduction = () => {
         <Photo />
         <Invitation />
         <Divider orientation="vertical" className={divider} />
+        <DDay />
         <Date />
       </Box>
     </DisplayAnimation>

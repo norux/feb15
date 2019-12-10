@@ -24,6 +24,7 @@
     "@material-ui/icons": "^4.5.1",
     "@rooks/use-visibility-sensor": "^3.4.3",
     "classnames": "^2.2.6",
+    "date-fns": "^2.8.1",
     "install": "^0.13.0",
     "npm": "^6.13.2",
     "prop-types": "^15.7.2",
