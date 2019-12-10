@@ -1,18 +1,20 @@
-import React, { Fragment } from 'react'
+import React from 'react'
 import { Introduction } from '~/components/Introduction/Introduction'
-import { Poet } from '~/components/Poet'
+import { Poet } from '~/components/Poet/Poet'
 import { Gallery } from '~/components/Gallery/Gallery'
 import { Location } from '~/components/Location/Location'
+import { TMI } from '~/components/TMI/TMI'
+import { Game } from '~/components/Game/Game'
 
 export const Index = () => {
   return (
-    <Fragment>
+    <>
       <Introduction />
       <Poet />
       <Gallery />
       <Location />
-      <Poet />
-      <Poet />
-    </Fragment>
+      <TMI />
+      <Game />
+    </>
   )
 }

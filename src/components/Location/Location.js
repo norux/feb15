@@ -5,9 +5,10 @@ import { Section } from '~/components/common/Section'
 import { Title } from '~/components/Location/Title'
 import { Map } from '~/components/Location/Map'
 import { ShuttleBus } from '~/components/Location/ShuttleBus/ShuttleBus'
-import { Metro } from '~/components/Location/Metro/Metro'
-import { Bus } from '~/components/Location/Bus/Bus'
+import { PublicTransportation } from '~/components/Location/PublicTransportation/PublicTransportation'
 import { QUERY_YES_VALUE } from '~/constants'
+import { Address } from '~/components/Location/Address/Address'
+import { Parking } from '~/components/Location/Parking/Parking'
 
 const useStyles = makeStyles(() => ({
   root: {
@@ -36,12 +37,13 @@ export const Location = () => {
   const { shuttle } = queryString.parse(location.search)
 
   return (
-    <Section className={root}>
+    <Section className={root} alignItems="flex-start">
       <Title className={title} locked={locked} onClickInit={onClickInit} onClickLock={onClickLock} />
       <Map locked={locked} />
+      <Address />
       {shuttle === QUERY_YES_VALUE && <ShuttleBus />}
-      <Metro />
-      <Bus />
+      <Parking />
+      <PublicTransportation />
     </Section>
   )
 }

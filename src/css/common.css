@@ -2,3 +2,11 @@
 .invisible-scrollbar::-webkit-scrollbar {
   display: none;
 }
+
+.naver-color {
+  color: #2DB400;
+}
+
+dt {
+  font-weight: 700;
+}

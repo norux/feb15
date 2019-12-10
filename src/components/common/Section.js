@@ -12,7 +12,7 @@ const useStyles = makeStyles(() => ({
   },
 }))
 
-export const Section = ({ children, className }) => {
+export const Section = ({ children, className, justifyContent = 'flex-start', alignItems = 'center' }) => {
   const { root } = useStyles()
   const classes = [root, className]
 
@@ -21,8 +21,8 @@ export const Section = ({ children, className }) => {
       <Box
         display="flex"
         flexDirection="column"
-        justifyContent="flex-start"
-        alignItems="center"
+        justifyContent={justifyContent}
+        alignItems={alignItems}
         className={classNames(classes)}>
         {children}
       </Box>

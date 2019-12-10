@@ -25,6 +25,10 @@ const theme = createMuiTheme({
       fontSize: '2rem',
       fontWeight: '500',
     },
+    subtitle2: {
+      fontSize: '1.6rem',
+      fontWeight: '500',
+    },
     body1: {
       fontFamily: 'Noto Serif KR, serif',
       fontSize: '1.6rem',

@@ -14,6 +14,18 @@ html, body {
   color: #616161;
 }
 
-.mrl30 {
+.mgrl30 {
   margin: 0 30px;
+}
+
+.mgl10 {
+  margin-left: 10px;
+}
+
+.mgt10 {
+  margin-top: 10px;
+}
+
+.mgt20 {
+  margin-top: 20px;
 }

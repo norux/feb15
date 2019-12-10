@@ -13,9 +13,6 @@ const useStyles = makeStyles(() => ({
   },
   location: {
     fontWeight: '600',
-    '& span': {
-      color: '#2DB400',
-    },
   },
 }))
 
@@ -28,7 +25,7 @@ export const Date = () => {
         2020년 2월 15일 토요일 오후 1시
       </Typography>
       <Typography variant="body1" className={location} align="center">
-        <span>네이버</span> 그린팩토리
+        <span className="naver-color">네이버</span> 그린팩토리
       </Typography>
     </Box>
   )

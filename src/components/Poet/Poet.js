@@ -4,6 +4,8 @@ import { Section } from '~/components/common/Section'
 import { Typography } from '@material-ui/core'
 import Box from '@material-ui/core/Box'
 import LocalCafeIcon from '@material-ui/icons/LocalCafeOutlined'
+import { Groom } from '~/components/Poet/Groom'
+import { Bride } from '~/components/Poet/Bride'
 
 const useStyles = makeStyles(() => ({
   root: {
@@ -18,7 +20,9 @@ const useStyles = makeStyles(() => ({
     },
     '&:nth-child(3)': {
       marginTop: '40px',
-      verticalAlign: 'middle',
+    },
+    '&:nth-child(4)': {
+      marginTop: '50px',
     },
   },
   icon: {
@@ -54,9 +58,13 @@ export const Poet = () => {
         <Box className={paragraph} display="flex" alignItems="center">
           <LocalCafeIcon className={icon} />
           <Typography variant="body1" className={typography}>
-            {' '}
             이이체 ‘연인’
           </Typography>
+        </Box>
+
+        <Box className={paragraph}>
+          <Groom />
+          <Bride />
         </Box>
       </>
     </Section>

@@ -4,16 +4,14 @@ import makeStyles from '@material-ui/core/styles/makeStyles'
 import Typography from '@material-ui/core/Typography'
 
 const useStyles = makeStyles(() => ({
-  root: {
-    marginLeft: '30px',
-  },
+  root: {},
 }))
 
-export const Content = () => {
+export const Title = () => {
   const { root } = useStyles()
   return (
     <Box className={root}>
-      <Typography variant="body1">지하철</Typography>
+      <Typography variant="h4">대중교통 안내 (지하철 / 버스)</Typography>
     </Box>
   )
 }
