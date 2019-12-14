@@ -9,18 +9,24 @@ const useStyles = makeStyles(() => ({
     width: '90%',
     fontSize: '1.6rem',
     alignSelf: 'center',
-    marginTop: '40px',
+    marginTop: '50px',
   },
   name: {
+    fontFamily: 'Noto Serif KR, serif',
+    fontWeight: '500',
+    fontSize: '3.2rem',
     width: '70%',
     textAlign: 'center',
+    '& span': {
+      fontSize: '2.2rem',
+    },
   },
   invitation: {
     width: '100%',
     marginTop: '15px',
     '& span': {
+      marginTop: '5px',
       fontSize: '1.7rem',
-      color: '#99c98a',
       transition: 'opacity .6s',
     },
   },
@@ -39,11 +45,13 @@ export const Invitation = () => {
   return (
     <Box display="flex" justifyContent="center" alignItems="center" flexDirection="column" className={root}>
       <Typography variant="h2" className={name}>
-        곽희범 🧡 용희원
+        곽희범 <span>&</span> 용희원
       </Typography>
       <Box display="flex" justifyContent="center" alignItems="center" flexDirection="column" className={invitation}>
         <Typography variant="subtitle1">결혼식에 초대합니다.</Typography>
-        <span style={style}>We invite you</span>
+        <span className="naver-color" style={style}>
+          We invite you
+        </span>
       </Box>
     </Box>
   )

@@ -7,7 +7,6 @@ const useStyles = makeStyles(() => ({
     display: 'inline-flex',
     justifyContent: 'center',
     alignItems: 'center',
-    padding: '0 15px 15px',
   },
 }))
 

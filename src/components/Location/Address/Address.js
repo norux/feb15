@@ -6,7 +6,7 @@ import { Content } from '~/components/Location/Address/Content'
 
 const useStyles = makeStyles(() => ({
   root: {
-    margin: '30px 30px 0',
+    margin: '0 30px',
   },
 }))
 

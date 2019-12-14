@@ -10,7 +10,7 @@ import { photos } from '~/components/Gallery/utils'
 const useStyles = makeStyles(() => ({
   root: {
     width: '100%',
-    padding: '30px 0',
+    padding: '50px 0',
     justifyContent: 'flex-start',
     alignItems: 'flex-start',
   },

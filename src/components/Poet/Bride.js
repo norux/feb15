@@ -8,11 +8,12 @@ const useStyles = makeStyles(() => ({
     margin: '10px 30px',
   },
   bride: {
-    marginLeft: '15px',
+    marginLeft: '12px',
     color: '#44839d',
   },
   typographyList: {
     display: 'flex',
+    alignItems: 'baseline',
   },
 }))
 

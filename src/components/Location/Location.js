@@ -9,26 +9,30 @@ import { PublicTransportation } from '~/components/Location/PublicTransportation
 import { QUERY_YES_VALUE } from '~/constants'
 import { Address } from '~/components/Location/Address/Address'
 import { Parking } from '~/components/Location/Parking/Parking'
+import Box from '@material-ui/core/Box'
 
 const useStyles = makeStyles(() => ({
   root: {
     width: '100%',
     position: 'relative',
-    padding: '30px 0',
+    padding: '50px 0',
   },
   title: {
     zIndex: 11,
   },
+  detailGuide: {
+    marginTop: '50px',
+  },
 }))
 
 export const Location = () => {
-  const { root, title } = useStyles()
+  const { root, title, detailGuide } = useStyles()
   const [locked, setLocked] = useState(true)
 
-  const onClickInit = () => {
+  const onClickInit = useCallback(() => {
     const resetEl = document.getElementsByClassName('btn_zoom_reset')[0]
     resetEl.click()
-  }
+  })
 
   const onClickLock = useCallback(() => {
     locked ? setLocked(false) : setLocked(true)
@@ -40,10 +44,12 @@ export const Location = () => {
     <Section className={root} alignItems="flex-start">
       <Title className={title} locked={locked} onClickInit={onClickInit} onClickLock={onClickLock} />
       <Map locked={locked} />
-      <Address />
-      {shuttle === QUERY_YES_VALUE && <ShuttleBus />}
-      <Parking />
-      <PublicTransportation />
+      <Box className={detailGuide}>
+        <Address />
+        {shuttle === QUERY_YES_VALUE && <ShuttleBus />}
+        <Parking />
+        <PublicTransportation />
+      </Box>
     </Section>
   )
 }

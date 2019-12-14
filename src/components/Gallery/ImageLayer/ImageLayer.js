@@ -8,6 +8,11 @@ import Swiper from 'swiper'
 import 'swiper/css/swiper.min.css'
 
 const useStyles = makeStyles(() => ({
+  '@global': {
+    '.MuiBackdrop-root': {
+      backgroundColor: 'rgba(0, 0, 0, 0.7)',
+    },
+  },
   root: {
     display: 'flex',
     alignItems: 'center',

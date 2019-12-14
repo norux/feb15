@@ -1,4 +1,4 @@
-$color_main_bg: #F0EBE7;
+$color_main_bg: #f0f0f0;
 
 html, body {
   background-color: $color_main_bg;
@@ -26,6 +26,6 @@ html, body {
   margin-top: 10px;
 }
 
-.mgt20 {
-  margin-top: 20px;
+.mgt15 {
+  margin-top: 15px;
 }

@@ -6,7 +6,7 @@ import Box from '@material-ui/core/Box'
 
 const useStyles = makeStyles(() => ({
   root: {
-    padding: '30px 0 0',
+    padding: '27px 0 0',
   },
   typographyList: {
     display: 'flex',

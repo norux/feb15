@@ -8,10 +8,10 @@ import { ImageLayer } from '~/components/Gallery/ImageLayer/ImageLayer'
 
 const useStyles = makeStyles(() => ({
   root: {
-    width: '100%',
     minHeight: '300px',
     overflow: 'hidden',
     overflowX: 'auto',
+    padding: '0 30px',
   },
   area: {
     display: 'inline-flex',

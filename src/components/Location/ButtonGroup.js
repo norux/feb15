@@ -10,7 +10,7 @@ const useStyles = makeStyles(() => ({
     marginRight: '30px',
   },
   icon: {
-    marginLeft: '10px',
+    marginLeft: '7px',
     minWidth: '32px',
   },
 }))

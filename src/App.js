@@ -16,13 +16,14 @@ const useStyles = makeStyles(() => ({
 
 const theme = createMuiTheme({
   typography: {
-    fontFamily: 'Nunito, sans-serif',
+    fontFamily: 'Noto Serif KR, serif',
     h2: {
       fontSize: '3rem',
       fontWeight: '500',
     },
     subtitle1: {
-      fontSize: '2rem',
+      fontFamily: 'Noto Serif KR, serif',
+      fontSize: '1.9rem',
       fontWeight: '500',
     },
     subtitle2: {

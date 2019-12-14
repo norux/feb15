@@ -13,9 +13,12 @@ const useStyles = makeStyles(() => ({
     backgroundColor: '#C6C6C6',
   },
   date: {
-    fontFamily: 'Pacifico, sans-serif',
+    fontFamily: 'Noto Serif, sans-serif',
+    fontWeight: '900',
+    color: '#333',
     fontSize: '4rem',
     '& span': {
+      marginLeft: '9px',
       fontSize: '1.3rem',
     },
   },
@@ -27,7 +30,7 @@ export const Title = () => {
   return (
     <Box alignItems="center" className={root}>
       <p className={date}>
-        02. 15 <span>❤️</span>
+        02. 15<span>❤️</span>
       </p>
     </Box>
   )

@@ -6,6 +6,7 @@ import Box from '@material-ui/core/Box'
 import LocalCafeIcon from '@material-ui/icons/LocalCafeOutlined'
 import { Groom } from '~/components/Poet/Groom'
 import { Bride } from '~/components/Poet/Bride'
+import ClassNames from 'classnames'
 
 const useStyles = makeStyles(() => ({
   root: {
@@ -16,10 +17,10 @@ const useStyles = makeStyles(() => ({
   },
   paragraph: {
     '&:nth-child(2)': {
-      marginTop: '50px',
+      marginTop: '27px',
     },
     '&:nth-child(3)': {
-      marginTop: '40px',
+      marginTop: '27px',
     },
     '&:nth-child(4)': {
       marginTop: '50px',
@@ -27,7 +28,6 @@ const useStyles = makeStyles(() => ({
   },
   icon: {
     marginRight: '7px',
-    color: '#e26364',
   },
 }))
 
@@ -56,7 +56,7 @@ export const Poet = () => {
         </Box>
 
         <Box className={paragraph} display="flex" alignItems="center">
-          <LocalCafeIcon className={icon} />
+          <LocalCafeIcon className={ClassNames(icon, 'naver-color')} />
           <Typography variant="body1" className={typography}>
             이이체 ‘연인’
           </Typography>

@@ -11,17 +11,20 @@ const useStyles = makeStyles(() => ({
   label: {
     fontSize: '1.4rem',
   },
+  button: {
+    padding: '5px 8px 5px 15px',
+  },
   icon: {
     fontSize: '2rem',
   },
 }))
 
 export const ExpandSwitch = ({ expanded, className, onClick }) => {
-  const { root, label, icon } = useStyles()
+  const { root, label, button, icon } = useStyles()
 
   return (
     <Box display="flex" alignItems="center" className={classNames(root, className)}>
-      <Button variant="outlined" onClick={onClick}>
+      <Button variant="outlined" onClick={onClick} className={button}>
         {expanded ? (
           <Fragment>
             <p className={label}>접기</p>

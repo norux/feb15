@@ -5,15 +5,20 @@ import Typography from '@material-ui/core/Typography'
 
 const useStyles = makeStyles(() => ({
   root: {
-    marginTop: '7px',
+    marginTop: '20px',
+  },
+  section: {
+    '&:nth-child(2)': {
+      marginTop: '12px',
+    },
   },
 }))
 
 export const Content = () => {
-  const { root } = useStyles()
+  const { root, section } = useStyles()
   return (
     <Box className={root}>
-      <dl>
+      <dl className={section}>
         <dt>
           <Typography variant="subtitle2">지하철</Typography>
         </dt>
@@ -24,7 +29,7 @@ export const Content = () => {
           <Typography variant="body2">도보 15분 또는 마을버스 이용</Typography>
         </dd>
       </dl>
-      <dl className="mgt20">
+      <dl className={section}>
         <dt>
           <Typography variant="subtitle2">정자역에서 마을 버스 탑승</Typography>
         </dt>

@@ -12,6 +12,7 @@ const useStyles = makeStyles(() => ({
     fontWeight: '600',
   },
   location: {
+    marginTop: '2pt',
     fontWeight: '600',
   },
 }))
