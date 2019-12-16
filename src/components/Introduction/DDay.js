@@ -18,9 +18,8 @@ const useStyles = makeStyles(() => ({
   },
 }))
 
-export const DDay = () => {
+export const DDay = ({ count, setCount }) => {
   const { root, typographyList } = useStyles()
-  const [count, setCount] = useState(0)
 
   const onClick = useCallback(() => {
     setCount(count + 1)

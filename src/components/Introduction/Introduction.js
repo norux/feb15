@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import Box from '@material-ui/core/Box'
 import makeStyles from '@material-ui/core/styles/makeStyles'
 import { DisplayAnimation } from '~/components/common/DisplayAnimation'
@@ -24,6 +24,7 @@ const useStyles = makeStyles(() => ({
 
 export const Introduction = () => {
   const { root, divider } = useStyles()
+  const [count, setCount] = useState(0)
 
   return (
     <DisplayAnimation>
@@ -32,8 +33,8 @@ export const Introduction = () => {
         <Photo />
         <Invitation />
         <Divider orientation="vertical" className={divider} />
-        <DDay />
-        <Date />
+        <DDay count={count} setCount={setCount} />
+        <Date count={count} />
       </Box>
     </DisplayAnimation>
   )
