@@ -2,11 +2,11 @@ $color_main_bg: #f0f0f0;
 
 html, body {
   background-color: $color_main_bg;
+  touch-action: manipulation;
 }
 
 .top {
   background-color: #fff;
-
 }
 
 #app {
