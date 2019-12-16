@@ -5,6 +5,7 @@ module.exports = {
     '@babel/plugin-proposal-object-rest-spread',
     'react-hot-loader/babel',
     '@babel/plugin-transform-runtime',
+    '@babel/plugin-syntax-dynamic-import',
     ['@babel/plugin-proposal-decorators', { legacy: true }],
   ],
 }

@@ -1,108 +1,29 @@
-import photo01 from '~/css/images/01.jpg'
-import photo02 from '~/css/images/02.jpg'
-import photo03 from '~/css/images/03.jpg'
-import photo04 from '~/css/images/04.jpg'
-import photo05 from '~/css/images/05.jpg'
+import { getImage } from '~/utils'
 
 export const photos = [
   {
-    src: photo01,
+    src: getImage('01.jpg'),
     alt: '',
     cols: 1,
   },
   {
-    src: photo02,
+    src: getImage('02.jpg'),
     alt: '',
     cols: 1,
   },
   {
-    src: photo03,
+    src: getImage('03.jpg'),
     alt: '',
     cols: 1,
   },
   {
-    src: photo04,
+    src: getImage('04.jpg'),
     alt: '',
     cols: 2,
   },
   {
-    src: photo05,
+    src: getImage('05.jpg'),
     alt: '',
     cols: 1,
   },
-  // {
-  //   src: photo03,
-  //   alt: '',
-  //   cols: 1,
-  // },
-  // {
-  //   src: photo04,
-  //   alt: '',
-  //   cols: 2,
-  // },
-  // {
-  //   src: photo05,
-  //   alt: '',
-  //   cols: 1,
-  // },
-  // {
-  //   src: photo03,
-  //   alt: '',
-  //   cols: 1,
-  // },
-  // {
-  //   src: photo04,
-  //   alt: '',
-  //   cols: 2,
-  // },
-  // {
-  //   src: photo05,
-  //   alt: '',
-  //   cols: 1,
-  // },
-  // {
-  //   src: photo05,
-  //   alt: '',
-  //   cols: 1,
-  // },
-  // {
-  //   src: photo03,
-  //   alt: '',
-  //   cols: 2,
-  // },
-  // {
-  //   src: photo04,
-  //   alt: '',
-  //   cols: 1,
-  // },
-  // {
-  //   src: photo05,
-  //   alt: '',
-  //   cols: 1,
-  // },
-  // {
-  //   src: photo04,
-  //   alt: '',
-  //   cols: 2,
-  // },
-  // {
-  //   src: photo05,
-  //   alt: '',
-  //   cols: 1,
-  // },
-  // {
-  //   src: photo05,
-  //   alt: '',
-  //   cols: 1,
-  // },
-  // {
-  //   src: photo01,
-  //   alt: '',
-  //   cols: 1,
-  // },
-  // {
-  //   src: photo02,
-  //   alt: '',
-  //   cols: 2,
-  // },
 ]
