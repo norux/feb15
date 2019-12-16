@@ -10,6 +10,7 @@ import { QUERY_YES_VALUE } from '~/constants'
 import { Address } from '~/components/Location/Address/Address'
 import { Parking } from '~/components/Location/Parking/Parking'
 import Box from '@material-ui/core/Box'
+import { Restaurant } from '~/components/Location/Restaurant/Restaurant'
 
 const useStyles = makeStyles(() => ({
   root: {
@@ -46,8 +47,9 @@ export const Location = () => {
       <Map locked={locked} />
       <Box className={detailGuide}>
         <Address />
-        {shuttle === QUERY_YES_VALUE && <ShuttleBus />}
+        <Restaurant />
         <Parking />
+        {shuttle === QUERY_YES_VALUE && <ShuttleBus />}
         <PublicTransportation />
       </Box>
     </Section>

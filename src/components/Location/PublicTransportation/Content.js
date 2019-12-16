@@ -31,17 +31,17 @@ export const Content = () => {
       </dl>
       <dl className={section}>
         <dt>
-          <Typography variant="subtitle2">정자역에서 마을 버스 탑승</Typography>
+          <Typography variant="subtitle2">정자역에서 마을 버스 탑승 시</Typography>
         </dt>
         <dd>
-          <Typography variant="body2">3번출구 바로 앞의 정류장에서 탑승</Typography>
+          <Typography variant="body2">3번출구 바로 앞의 정류장에서 탑승합니다.</Typography>
         </dd>
         <dd>
-          <Typography variant="body2">2번 버스 탑승, 네이버 정류장에서 하차</Typography>
+          <Typography variant="body2">2번 버스 탑승 시, 네이버 정류장에서 하차</Typography>
         </dd>
         <dd>
           <Typography variant="body2">
-            1, 19, 380, 250, 300, 520, 390, 116-1번 버스 탑승, 미켈란쉐르빌 하차 후 도보 5분
+            1, 19, 380, 250, 300, 520, 390, 116-1번 버스 탑승 시, 미켈란쉐르빌 하차 후 도보 5분
           </Typography>
         </dd>
       </dl>

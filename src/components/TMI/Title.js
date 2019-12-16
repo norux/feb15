@@ -19,7 +19,7 @@ export const Title = ({ className }) => {
   return (
     <Box className={classNames(className, root)} display="flex" flexDirection="row" justifyContent="space-between">
       <Box display="flex" className={title}>
-        <Typography variant="h3">TMI</Typography>
+        <Typography variant="h3">TMI Talk</Typography>
       </Box>
     </Box>
   )

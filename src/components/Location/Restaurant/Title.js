@@ -11,7 +11,7 @@ export const Title = () => {
   const { root } = useStyles()
   return (
     <Box className={root}>
-      <Typography variant="h4">대중교통 안내</Typography>
+      <Typography variant="h4">피로연 안내</Typography>
     </Box>
   )
 }

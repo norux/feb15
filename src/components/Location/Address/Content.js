@@ -16,7 +16,7 @@ export const Content = () => {
       <ul>
         <li>
           <Typography variant="subtitle2">
-            <span className="naver-color">네이버</span> 그린팩토리
+            <span className="naver-color">네이버</span> 그린팩토리 2층 커넥트홀
           </Typography>
         </li>
         <li>
@@ -24,9 +24,6 @@ export const Content = () => {
         </li>
         <li>
           <Typography variant="body2">지번주소: 경기도 성남시 분당구 정자동 178-1</Typography>
-        </li>
-        <li>
-          <Typography variant="body2">1588-3830</Typography>
         </li>
       </ul>
     </Box>

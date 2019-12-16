@@ -4,7 +4,6 @@ import { Poet } from '~/components/Poet/Poet'
 import { Gallery } from '~/components/Gallery/Gallery'
 import { Location } from '~/components/Location/Location'
 import { TMI } from '~/components/TMI/TMI'
-import { Game } from '~/components/Game/Game'
 
 export const Index = () => {
   return (
@@ -14,7 +13,6 @@ export const Index = () => {
       <Gallery />
       <Location />
       <TMI />
-      <Game />
     </>
   )
 }
