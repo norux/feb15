@@ -15,6 +15,7 @@ const useStyles = makeStyles(() => ({
       listStyleType: 'decimal',
       textIndent: '-50px',
       paddingLeft: '50px',
+      wordBreak: 'keep-all',
       '&> li': {
         '&.heebum': {
           '&>.MuiTypography-body2': {

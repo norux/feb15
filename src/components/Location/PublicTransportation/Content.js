@@ -8,7 +8,7 @@ const useStyles = makeStyles(() => ({
     marginTop: '20px',
   },
   section: {
-    '&:nth-child(2)': {
+    '&:not(:nth-child(1))': {
       marginTop: '12px',
     },
   },
