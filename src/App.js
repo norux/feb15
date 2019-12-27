@@ -10,7 +10,6 @@ import { Index } from '~/pages'
 const useStyles = makeStyles(() => ({
   root: {
     padding: 0,
-    height: '100vh',
   },
 }))
 

@@ -1,4 +1,4 @@
-import React, { useMemo } from 'react'
+import React from 'react'
 import makeStyles from '@material-ui/core/styles/makeStyles'
 import { Typography } from '@material-ui/core'
 import Box from '@material-ui/core/Box'
@@ -17,7 +17,7 @@ const useStyles = makeStyles(() => ({
   },
 }))
 
-export const Date = ({count}) => {
+export const Date = ({ count }) => {
   const { root, date, location } = useStyles()
 
   return (

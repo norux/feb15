@@ -136,3 +136,7 @@ textarea {
   -webkit-appearance: button;
   font: inherit;
 }
+
+:not(input):not(textarea) {
+  user-select: none;
+}

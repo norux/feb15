@@ -39,7 +39,7 @@ export const Location = () => {
     locked ? setLocked(false) : setLocked(true)
   }, [locked])
 
-  const { shuttle } = queryString.parse(location.search)
+  const { st } = queryString.parse(location.search)
 
   return (
     <Section className={root} alignItems="flex-start">
@@ -49,7 +49,7 @@ export const Location = () => {
         <Address />
         <Restaurant />
         <Parking />
-        {shuttle === QUERY_YES_VALUE && <ShuttleBus />}
+        {st === QUERY_YES_VALUE && <ShuttleBus />}
         <PublicTransportation />
       </Box>
     </Section>

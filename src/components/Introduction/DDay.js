@@ -1,8 +1,4 @@
-import React, {
-  useCallback,
-  useMemo,
-  useState,
-} from 'react'
+import React, { useCallback, useMemo } from 'react'
 import makeStyles from '@material-ui/core/styles/makeStyles'
 import differenceInCalendarDays from 'date-fns/differenceInCalendarDays'
 import { Typography } from '@material-ui/core'
@@ -15,6 +11,7 @@ const useStyles = makeStyles(() => ({
   typographyList: {
     display: 'flex',
     alignItems: 'center',
+    userSelect: 'none',
   },
 }))
 
@@ -48,7 +45,7 @@ export const DDay = ({ count, setCount }) => {
       <ul className={typographyList} onClick={onClick}>
         <li>
           <Typography variant="h3" align="center">
-            {count < 17 ? 'D' : '❤️' }
+            {count < 17 ? 'D' : '❤️'}
           </Typography>
         </li>
         <li className="mgl10">
