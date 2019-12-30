@@ -31,7 +31,8 @@
     "query-string": "^6.9.0",
     "react": "^16.12.0",
     "react-dom": "^16.12.0",
-    "swiper": "^5.2.1"
+    "swiper": "^5.2.1",
+    "uuid": "^3.3.3"
   },
   "devDependencies": {
     "@babel/core": "^7.7.5",
