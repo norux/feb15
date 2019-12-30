@@ -16,16 +16,10 @@ export function isDate(date) {
 
 export function toCalendarString(date) {
   const isoString = date.toISOString()
-  return isoString
-    .replace(/[-:]/g, '')
-    .replace(/\.[0-9]{3}/g, '')
+  return isoString.replace(/[-:]/g, '').replace(/\.[0-9]{3}/g, '')
 }
 
 export function addToCalendar(subject, description, location, begin, end) {
-  const SEPARATOR = '\n'
-  const MIME_TYPE = 'data:text/calendar'
-  const CHARSET = 'charset=utf8'
-
   const BEGIN_CALENDAR = ['BEGIN:VCALENDAR', 'PRODID:Calendar', 'VERSION:2.0']
   const END_CALENDAR = ['END:VCALENDAR']
 
@@ -52,6 +46,6 @@ export function addToCalendar(subject, description, location, begin, end) {
     'END:VEVENT',
   ]
 
-  const icsFormatString = Array.prototype.concat(BEGIN_CALENDAR, events, END_CALENDAR).join(SEPARATOR)
+  const icsFormatString = Array.prototype.concat(BEGIN_CALENDAR, events, END_CALENDAR).join('\n')
   return URL.createObjectURL(new Blob([icsFormatString], { type: 'text/calendar' }))
 }

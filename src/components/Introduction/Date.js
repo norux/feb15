@@ -4,7 +4,7 @@ import { Typography } from '@material-ui/core'
 import Box from '@material-ui/core/Box'
 import Link from '@material-ui/core/Link'
 import { addToCalendar } from '~/utils'
-import InsertInvitationIcon from '@material-ui/icons/InsertInvitation';
+import InsertInvitationIcon from '@material-ui/icons/InsertInvitation'
 
 const useStyles = makeStyles(() => ({
   root: {
@@ -25,7 +25,7 @@ const useStyles = makeStyles(() => ({
     '& svg': {
       verticalAlign: 'bottom',
       marginRight: '2px',
-    }
+    },
   },
 }))
 

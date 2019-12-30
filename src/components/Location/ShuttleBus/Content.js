@@ -44,7 +44,6 @@ export const Content = () => {
           <Typography variant="body2">오후 03:30 - 네이버 정문 앞에서 인천으로 출발</Typography>
         </dd>
       </dl>
-
     </Box>
   )
 }
