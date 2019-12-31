@@ -43,14 +43,14 @@ export const Date = ({ count }) => {
     [],
   )
   return (
-    <Box className={root}>
+    <Box className={root} display="flex" flexDirection="column" alignItems="center" justifyContent="center">
       <Typography variant="body1" className={date} align="center">
         {count < 17 ? '2020년 2월 15일 토요일 오후 1시' : '2017년 6월 17일 토요일부터 :)'}
       </Typography>
       <Typography variant="body1" className={location} align="center">
         <span className="naver-color">네이버</span> 그린팩토리
       </Typography>
-      <Link href={calendarContent} download="feb15" align="center" color="inherit">
+      <Link href={calendarContent} download="feb15" color="inherit">
         <Typography variant="body2" className={calendarLink} align="center">
           <InsertInvitationIcon />
           캘린더에 등록하기
