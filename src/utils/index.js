@@ -26,8 +26,6 @@ export function addToCalendar(subject, description, location, begin, end) {
   const beginDate = isDate(begin) ? begin : new Date(begin)
   const endDate = isDate(end) ? end : new Date(end)
 
-  console.log(beginDate, endDate)
-
   const events = [
     'BEGIN:VEVENT',
     `UID:${uuid()}`,
