@@ -16,12 +16,13 @@ export function isDate(date) {
 
 export function toCalendarString(date) {
   const isoString = date.toISOString()
-  return isoString.replace(/[-:]/g, '').replace(/\.[0-9]{3}/g, '')
+  return isoString.replace(/[-:]/g, '').replace(/\.[0-9]{3}Z/gi, '')
 }
 
 export function addToCalendar(subject, description, location, begin, end) {
   const BEGIN_CALENDAR = ['BEGIN:VCALENDAR', 'PRODID:Calendar', 'VERSION:2.0']
   const END_CALENDAR = ['END:VCALENDAR']
+  const SEPARATOR = '\n'
 
   const beginDate = isDate(begin) ? begin : new Date(begin)
   const endDate = isDate(end) ? end : new Date(end)
@@ -31,8 +32,8 @@ export function addToCalendar(subject, description, location, begin, end) {
     `UID:${uuid()}`,
     'CLASS:PUBLIC',
     `DTSTAMP:${toCalendarString(new Date())}`,
-    `DTSTART:${toCalendarString(beginDate)}`,
-    `DTEND:${toCalendarString(endDate)}`,
+    `DTSTART;TZID=Asia/Seoul:${toCalendarString(beginDate)}`,
+    `DTEND;TZID=Asia/Seoul:${toCalendarString(endDate)}`,
     `SUMMARY: ${subject}`,
     `DESCRIPTION:${description}`,
     `LOCATION:${location}`,
@@ -44,6 +45,6 @@ export function addToCalendar(subject, description, location, begin, end) {
     'END:VEVENT',
   ]
 
-  const icsFormatString = Array.prototype.concat(BEGIN_CALENDAR, events, END_CALENDAR).join('\n')
+  const icsFormatString = Array.prototype.concat(BEGIN_CALENDAR, events, END_CALENDAR).join(SEPARATOR)
   return URL.createObjectURL(new Blob([icsFormatString], { type: 'text/calendar' }))
 }
