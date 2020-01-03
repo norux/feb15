@@ -3,7 +3,7 @@ import classNames from 'classnames'
 import Box from '@material-ui/core/Box'
 import Typography from '@material-ui/core/Typography'
 import makeStyles from '@material-ui/core/styles/makeStyles'
-import { ExpandSwitch } from '~/components/Gallery/ExpandSwitch'
+import { ViewSwitch } from '~/components/Gallery/ViewSwitch'
 
 const useStyles = makeStyles(() => ({
   root: {
@@ -25,7 +25,7 @@ export const Title = ({ className, ...props }) => {
       <Box display="flex" className={title}>
         <Typography variant="h3">Gallery</Typography>
       </Box>
-      <ExpandSwitch className={button} {...props} />
+      <ViewSwitch className={button} {...props} />
     </Box>
   )
 }
