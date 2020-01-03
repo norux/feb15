@@ -3,7 +3,7 @@ import classNames from 'classnames'
 import Box from '@material-ui/core/Box'
 import Typography from '@material-ui/core/Typography'
 import makeStyles from '@material-ui/core/styles/makeStyles'
-import { ButtonGroup } from '~/components/Location/ButtonGroup'
+import { ButtonGroup } from '~/components/Information/ButtonGroup'
 
 const useStyles = makeStyles(() => ({
   root: {

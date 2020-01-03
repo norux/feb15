@@ -2,8 +2,8 @@ import Box from '@material-ui/core/Box'
 import classNames from 'classnames'
 import React from 'react'
 import makeStyles from '@material-ui/core/styles/makeStyles'
-import { LockButton } from '~/components/Location/LockButton'
-import { InitButton } from '~/components/Location/InitButton'
+import { LockButton } from '~/components/Information/LockButton'
+import { InitButton } from '~/components/Information/InitButton'
 
 const useStyles = makeStyles(() => ({
   root: {

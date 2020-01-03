@@ -2,15 +2,15 @@ import React, { useCallback, useState } from 'react'
 import queryString from 'query-string'
 import makeStyles from '@material-ui/core/styles/makeStyles'
 import { Section } from '~/components/common/Section'
-import { Title } from '~/components/Location/Title'
-import { Map } from '~/components/Location/Map'
-import { ShuttleBus } from '~/components/Location/ShuttleBus/ShuttleBus'
-import { PublicTransportation } from '~/components/Location/PublicTransportation/PublicTransportation'
+import { Title } from '~/components/Information/Title'
+import { Map } from '~/components/Information/Map'
+import { ShuttleBus } from '~/components/Information/ShuttleBus/ShuttleBus'
+import { PublicTransportation } from '~/components/Information/PublicTransportation/PublicTransportation'
 import { QUERY_YES_VALUE } from '~/constants'
-import { Address } from '~/components/Location/Address/Address'
-import { Parking } from '~/components/Location/Parking/Parking'
+import { Address } from '~/components/Information/Address/Address'
+import { Parking } from '~/components/Information/Parking/Parking'
 import Box from '@material-ui/core/Box'
-import { Restaurant } from '~/components/Location/Restaurant/Restaurant'
+import { Restaurant } from '~/components/Information/Restaurant/Restaurant'
 
 const useStyles = makeStyles(() => ({
   root: {
@@ -26,7 +26,7 @@ const useStyles = makeStyles(() => ({
   },
 }))
 
-export const Location = () => {
+export const Information = () => {
   const { root, title, detailGuide } = useStyles()
   const [locked, setLocked] = useState(true)
 
