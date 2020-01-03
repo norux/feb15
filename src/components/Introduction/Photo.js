@@ -13,7 +13,7 @@ const useStyles = makeStyles(() => ({
   },
 }))
 
-const introImage = getImage('sample.jpeg')
+const introImage = getImage('intro2.jpg')
 export const Photo = () => {
   const { root, img } = useStyles()
 
