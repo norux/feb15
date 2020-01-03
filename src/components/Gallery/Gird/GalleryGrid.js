@@ -17,6 +17,11 @@ const useStyles = makeStyles(() => ({
   box: {
     padding: '0 30px 15px',
   },
+  '@global': {
+    '.MuiGridListTile-tile': {
+      display: 'flex',
+    }
+  }
 }))
 
 const GRID_LIST_MAX_COLUMN_LENGTH = 3
