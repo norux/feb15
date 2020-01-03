@@ -12,7 +12,7 @@ import { DDay } from '~/components/Introduction/DDay'
 const useStyles = makeStyles(() => ({
   root: {
     backgroundColor: '#FFF',
-    paddingTop: '50px',
+    paddingTop: '40px',
   },
   divider: {
     marginTop: '20px',
