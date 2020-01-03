@@ -28,7 +28,7 @@ export const Content = () => {
       </dl>
       <dl className={section}>
         <dd>
-          <Typography variant="body2">* 뷔페 음식은 식당에서 직접 조리합니다.</Typography>
+          <Typography variant="body2">* 구내식당에서 직접 조리한 뷔페 음식이 제공됩니다.</Typography>
         </dd>
       </dl>
     </Box>
