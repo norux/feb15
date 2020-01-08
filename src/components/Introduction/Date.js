@@ -54,7 +54,7 @@ export const Date = ({ count }) => {
   )
 
   const isWebview = useMemo(
-    () => /((iPhone|iPod|iPad).*AppleWebKit(?!.*Safari)|(;\s?wv)|(IAB))/i.test(navigator.userAgent),
+    () => /(\s(KAKAOTALK|FBAN|FBIOS|Line|Twitter|Instagram)|(;\s?wv)|(IAB))/i.test(navigator.userAgent),
     [],
   )
   const onClick = useCallback(() => {
